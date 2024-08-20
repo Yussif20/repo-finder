@@ -2,7 +2,10 @@ import { cardsElements } from "./elements";
 
 export const setSearchResult = (data) =>{
     let result ='';
-    if(data === null){
+    if(data?.length === 0){
+        result = `<p>No results found.</p>`
+    }
+    else if(data === null){
         result = "";
     }else if(data?.length){
         data.map((item)=>{
