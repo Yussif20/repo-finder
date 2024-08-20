@@ -6,7 +6,7 @@ export const setSearchResult = (data) =>{
         result += `
             <article class="card">
                 <img class="img" loading="lazy" src="${item.avatar_url}" />
-                <h2 class="name">${item.login}</h2>
+                <h2 class="name"><a href="${item.html_url}" target="_blank">${item.login}</a></h2>
             </article>
         `
     })
