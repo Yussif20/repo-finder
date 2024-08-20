@@ -50,14 +50,6 @@ To run this project locally, you need a web browser installed on your machine. N
 - **CSS**: Styling and layout.
 - **JavaScript**: Logic for handling the search functionality and interacting with the GitHub API.
 
-## Future Enhancements
-
-- **Profile Details**: Display additional details like bio, number of repositories, followers, etc.
-- **Repository Search**: Allow users to search and view repositories for a selected user or organization.
-- **Pagination**: Implement pagination for large search results.
-- **Dark Mode**: Add a dark mode option for better accessibility.
-
 ## Contact
 
-- **Name**: Yousef Ayman
 - **GitHub**: [Yussif Ayman](https://github.com/Yussif20)

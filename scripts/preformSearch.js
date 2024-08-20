@@ -15,7 +15,9 @@ export const performSearch = (searchTerm,isUserSelected)=>{
     setLoadingState(true)
     fetch(`${USERS_API}${searchTerm}${type}`).
     then(result => result.json()).
-    then(response =>setSearchResult(response.items)).finally(()=>{
+    then((response) =>{
+        setSearchResult(response.items);
+    }).finally(()=>{
         setLoadingState(false)
     })
 }
