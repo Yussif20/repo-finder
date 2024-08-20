@@ -1,3 +1,4 @@
+import { setLoadingState } from "./setLoadingState";
 import { setMessage } from "./setMessage";
 import { setSearchResult } from "./setSearchResult";
 
@@ -11,10 +12,10 @@ export const performSearch = (searchTerm,isUserSelected)=>{
         return;
     }
     setMessage()
+    setLoadingState(true)
     fetch(`${USERS_API}${searchTerm}${type}`).
     then(result => result.json()).
-    then((response) => {
-        setSearchResult(response.items)
-        console.log(response.items)
+    then(response =>setSearchResult(response.items)).finally(()=>{
+        setLoadingState(false)
     })
 }
